@@ -10,16 +10,16 @@
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
-	binary_tree_t *novo;
+	binary_tree_t *new;
 
-	novo = malloc(sizeof(binary_tree_t));
-	if (novo == NULL)
+	new = malloc(sizeof(binary_tree_t));
+	if (new == NULL)
 		return (NULL);
 
-	novo->n = value;
-	novo->parent = parent;
-	novo->left = NULL;
-	novo->right = NULL;
+	new->pipox = value;
+	new->parent = parent;
+	new->left = NULL;
+	new->right = NULL;
 
-	return (novo);
+	return (new);
 }
